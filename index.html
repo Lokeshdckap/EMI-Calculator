@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="form">
+            <div class="content">
+                <h2>EMI Calculator</h2>
+                <hr>
+                <ul>
+                    <li>Home Loan</li>
+                    <li>Personal Loan</li>
+                    <li>Car Loan</li>
+                </ul>
+                <div class="elements">
+                    <div class="one">
+                        <label for="">Loan Amount</label>
+                        <input class="LoanAmount " type="number" min="1">
+                        <div id="bor2">₹</div>
+                    </div>
+                    <input class="range" value="0" min="1" max="20000000" type="range" step="10">
+                    <div class="one">
+                        <label for="">Interest Rate</label>
+                        <input class="Interest" type="number" min="1">
+                        <div id="bor1">%</div>
+                    </div>
+                    <input class="range" value="0" min="1" max="120" type="range" step="1">
+                    <div class="one">
+                        <label for="" class="move">Tenure Y/M</label>
+                        <input class="three" id="Tenure" type="number" min="1">
+                        <div class="hide" id="bor">Yr</div>
+                        <div class="hide1" id="bors">Mo</div>
+                    </div>
+                    <input class="range" value="0" min="1" max="360" type="range" step="1">
+                    <button class="submit" type="submit">Calculate</button>
+        </form>
+        <footer>
+        <h3 class="foot1">Loan EMI:<p class="total"></p></h3>
+        <h3 class="foot2">Total Interest Payable:<p class="totalInter"></p></h3>
+        <h3 class="foot3">Total Amount Payable (Principal+Interest):<p class="totalAmount"></p></h3>
+    </footer>
+      <!-- <h4></h4> -->
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <canvas id="myChart" style="width: 100%; max-width: 600px; background-color: black;"></canvas> -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
